@@ -3,10 +3,11 @@
 /* Controllers */
 
 
-function MyCtrl1() {}
-MyCtrl1.$inject = [];
-
-
-function MyCtrl2() {
+function UsersController($scope) {
+  $scope.users = [
+    {"name":"John"},
+    {"name":"Sarah"},
+    {"name":"Michael"},
+    {"name":"Michelle"}
+  ]
 }
-MyCtrl2.$inject = [];
